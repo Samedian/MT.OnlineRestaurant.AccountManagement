@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="EntityFramework" Version="6.4.0-preview1-19506-01" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+	<ItemGroup>
+		<DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MT.OnlineRestaurant.BusinessLayer\MT.OnlineRestaurant.BusinessLayer.csproj" />
+		<ProjectReference Include="..\MT.OnlineRestaurant.Helper\MT.OnlineRestaurant.Helper.csproj" />
+		<ProjectReference Include="..\MT.OnlineRestaurant.Logging\MT.OnlineRestaurant.Logging.csproj" />
+		<!--<ProjectReference Include="..\MT.OnlineRestaurant.ValidateUserHandler\MT.OnlineRestaurant.ValidateUserHandler.csproj" />-->
+	</ItemGroup>
+
+</Project>
